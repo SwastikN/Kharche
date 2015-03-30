@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="@color/actionBarBackground">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/appBackground"
+        android:orientation="vertical" >
+        <ScrollView android:id="@+id/ScrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="6dip"
+                >
+                <TextView
+                    android:id="@+id/help_page_intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="@string/help_page_intro1"
+                    android:padding="2dip"
+                    android:layout_weight="1"
+                    />
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="235dp"
+                    android:id="@+id/SS1"
+                    android:src="@drawable/screenshot1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/help_page_intro2"
+                    android:id="@+id/textView2"
+                    android:textSize="20dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="235dp"
+                    android:id="@+id/SS2"
+                    android:src="@drawable/screenshot2"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/help_page_intro3"
+                    android:textSize="20dp"
+                    android:id="@+id/textView3"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="235dp"
+                    android:id="@+id/SS3"
+                    android:src="@drawable/screenshot3"
+                    android:layout_weight="1" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/help_page_intro4"
+                    android:textSize="20dp"
+                    android:id="@+id/textView4"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
